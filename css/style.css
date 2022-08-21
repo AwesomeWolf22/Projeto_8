@@ -1,0 +1,22 @@
+.box-fix {
+    margin-top: 57px;
+}
+
+section.bg-top {
+    width: 100%; height: 600px;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+section.bg-top .overlay {
+    position: absolute; z-index: 1;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-color: rgba(55, 55, 55, 0.4);
+}
+
+section.bg-top .fix-z-index {
+    position: relative; z-index: 2;
+}
