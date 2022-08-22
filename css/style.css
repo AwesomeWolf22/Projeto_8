@@ -2,6 +2,29 @@
     margin-top: 57px;
 }
 
+.custom-title {
+    position: relative;
+    max-width: fit-content;
+}
+
+.custom-title h2 {
+    color: #888;
+}
+
+.custom-title div {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100px; height: 2px;
+    background-color: #3FA3C5;
+    transition: 0.4s;
+}
+
+.custom-title:hover div {
+    width: 200px;
+}
+
+/** BG-TOP **/
+
 section.bg-top {
     width: 100%; height: 600px;
     background-image: url('../images/bg.jpg');
@@ -50,26 +73,101 @@ section.chamada {
 /** SOBRE **/
 
 section.sobre {
+    background-color: rgb(230, 230, 230);
     padding: 30px 0;
 }
 
-.custom-title {
-    position: relative;
-    max-width: fit-content;
+/** DIFERENCIAIS **/
+
+section.diferenciais {
+    padding: 30px 0;
 }
 
-.custom-title h2 {
-    color: #888;
+section.diferenciais .text-center {
+    padding: 0 40px !important;
+    color: #646464;
 }
 
-.custom-title div {
-    position: absolute;
-    top: 0; left: 0;
-    width: 120px; height: 2px;
+section.diferenciais .text-center h2 {
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+}
+
+/** CONVITE **/
+
+section.convite {
     background-color: #3FA3C5;
-    transition: 0.4s;
+    padding: 30px 0;
 }
 
-.custom-title:hover div {
-    width: 240px;
+section.convite h2 {
+    color: white;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+section.convite h2 i {
+    margin-right: 10px;
+}
+
+section.convite button {
+    background-color: rgb(234, 234, 234); color: black;
+    padding: 7px 12px;
+    border: 0;
+}
+
+section.convite button:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+/** CONTATO **/
+
+section.contato {
+    background-color: rgb(230, 230, 230);
+    padding: 30px 0;
+}
+
+section.contato form {
+    padding-top: 20px;
+    color: black;
+}
+
+section.contato form textarea {
+    resize: none;
+}
+
+/** FOOTER **/
+
+footer {
+    color: white;
+}
+
+footer.top {
+    background-color: #333;
+    padding: 15px 0;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+footer .group-btns a {
+    margin: 0 4px;
+    font-size: 18px;
+}
+
+footer ul {
+    list-style: none; list-style-position: inside;
+    margin: 0; padding: 0;
+}
+
+
+footer.bottom {
+    background-color: #555;
+    padding: 8px 0;
+}
+
+footer.bottom p {
+    margin: 0;
 }
